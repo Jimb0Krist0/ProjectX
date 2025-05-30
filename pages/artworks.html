@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предметы искусства | Институт культурного наследия</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка (аналогично) -->
+    <header class="header">
+        <!-- ... -->
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Коллекция предметов искусства</h1>
+            <p>Изучите уникальные артефакты из наших архивов</p>
+        </div>
+    </section>
+
+    <!-- Фильтры и поиск -->
+    <section class="artworks-filters">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Поиск по названию...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="painting">Живопись</button>
+                <button class="filter-btn" data-filter="sculpture">Скульптура</button>
+                <button class="filter-btn" data-filter="ceramics">Керамика</button>
+                <button class="filter-btn" data-filter="textile">Текстиль</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка предметов -->
+    <section class="artworks-gallery">
+        <div class="container">
+            <div class="artworks-grid">
+                <!-- Предмет 1 -->
+                <article class="artwork-card" data-category="painting" data-title="Мона Лиза">
+                    <div class="artwork-card__image">
+                        <img src="images/artwork1.jpg" alt="Мона Лиза">
+                        <button class="zoom-btn" data-image="images/artwork1.jpg">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="artwork-card__content">
+                        <h3>Мона Лиза (копия)</h3>
+                        <p><strong>Автор:</strong> Леонардо да Винчи</p>
+                        <p><strong>Год:</strong> 1503–1506</p>
+                        <p><strong>Техника:</strong> Масло, дерево</p>
+                    </div>
+                </article>
+
+                <!-- Предмет 2 -->
+                <article class="artwork-card" data-category="sculpture" data-title="Дискобол">
+                    <div class="artwork-card__image">
+                        <img src="images/artwork2.jpg" alt="Дискобол">
+                        <button class="zoom-btn" data-image="images/artwork2.jpg">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="artwork-card__content">
+                        <h3>Дискобол (реплика)</h3>
+                        <p><strong>Автор:</strong> Мирон</p>
+                        <p><strong>Год:</strong> V век до н.э.</p>
+                        <p><strong>Материал:</strong> Мрамор</p>
+                    </div>
+                </article>
+
+                <!-- Предмет 3 -->
+                <article class="artwork-card" data-category="ceramics" data-title="Амфора">
+                    <div class="artwork-card__image">
+                        <img src="images/artwork3.jpg" alt="Амфора">
+                        <button class="zoom-btn" data-image="images/artwork3.jpg">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="artwork-card__content">
+                        <h3>Чёрнофигурная амфора</h3>
+                        <p><strong>Культура:</strong> Древняя Греция</p>
+                        <p><strong>Год:</strong> VI век до н.э.</p>
+                        <p><strong>Техника:</strong> Глина, роспись</p>
+                    </div>
+                </article>
+
+                <!-- Предмет 4 -->
+                <article class="artwork-card" data-category="textile" data-title="Гобелен">
+                    <div class="artwork-card__image">
+                        <img src="images/artwork4.jpg" alt="Гобелен">
+                        <button class="zoom-btn" data-image="images/artwork4.jpg">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="artwork-card__content">
+                        <h3>Гобелен "Охота на единорога"</h3>
+                        <p><strong>Происхождение:</strong> Фландрия</p>
+                        <p><strong>Год:</strong> XV век</p>
+                        <p><strong>Материал:</strong> Шерсть, шёлк</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для увеличения изображения -->
+    <div class="modal" id="imageModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <!-- ... -->
+    </footer>
+
+    <script src="../js/filter.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
