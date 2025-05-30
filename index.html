@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Международный институт культурного наследия</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка (Header) -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Логотип института">
+                    <span>Институт культурного наследия</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="diaries.html">Реставрационные дневники</a></li>
+                        <li><a href="artworks.html">Предметы искусства</a></li>
+                    </ul>
+                </nav>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero-блок -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1>Сохранение наследия для будущих поколений</h1>
+                <p>Изучаем, реставрируем и популяризируем мировое культурное наследие.</p>
+                <a href="#about" class="btn">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас (About) -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>О нашем институте</h2>
+            <p>Международный институт культурного наследия — это научно-исследовательская организация, занимающаяся сохранением, изучением и популяризацией объектов культурного наследия по всему миру. Наши эксперты работают с музеями, архивами и UNESCO.</p>
+        </div>
+    </section>
+
+    <!-- Последние новости (News Preview) -->
+    <section class="news-preview">
+        <div class="container">
+            <h2>Последние новости</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="images/news1.jpg" alt="Новость 1">
+                    <div class="news-card__content">
+                        <span class="news-date">15 мая 2024</span>
+                        <h3>Выставка "Сокровища Древнего Египта"</h3>
+                        <p>Открытие новой экспозиции в партнерстве с Лувром.</p>
+                        <a href="news.html#news1" class="read-more">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news2.jpg" alt="Новость 2">
+                    <div class="news-card__content">
+                        <span class="news-date">10 мая 2024</span>
+                        <h3>Конференция по цифровой реставрации</h3>
+                        <p>Обсуждение новых технологий в сохранении артефактов.</p>
+                        <a href="news.html#news2" class="read-more">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news3.jpg" alt="Новость 3">
+                    <div class="news-card__content">
+                        <span class="news-date">5 мая 2024</span>
+                        <h3>Реставрация фресок XII века</h3>
+                        <p>Завершены работы в монастыре Святого Галла.</p>
+                        <a href="news.html#news3" class="read-more">Читать далее →</a>
+                    </div>
+                </article>
+            </div>
+            <a href="news.html" class="btn">Все новости</a>
+        </div>
+    </section>
+
+    <!-- Футер (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__about">
+                    <h3>Институт культурного наследия</h3>
+                    <p>Наша миссия — сохранять историю для будущего.</p>
+                </div>
+                <div class="footer__contacts">
+                    <h3>Контакты</h3>
+                    <p>Email: info@heritage-institute.org</p>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                </div>
+                <div class="footer__social">
+                    <h3>Соцсети</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© 2024 Международный институт культурного наследия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
