@@ -296,4 +296,99 @@ body {
     .hero h1 {
         font-size: 2.2rem;
     }
+
+    /* Стили для news.html */
+.page-header {
+    background: url('../images/news-bg.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 70px; /* Учитываем шапку */
+}
+
+.page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.news-filters {
+    padding: 30px 0;
+    background: var(--light-color);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Стили для diaries.html */
+.diaries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.diary-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.diary-card__images {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.diary-card__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+}
+
+.diary-card__images .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.diary-card:hover .after {
+    opacity: 1;
+}
+
+.diary-card__content {
+    padding: 20px;
+}
+
+.diary-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.diary-card p {
+    margin-bottom: 10px;
+}
+
 }
